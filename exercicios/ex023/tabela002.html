@@ -14,6 +14,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td, th {
@@ -21,9 +22,26 @@
            padding: 10px;
         }
 
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
         thead, tfoot {
             background-color: gray;
             color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;  
+            top: -1px;
+            background-color: #383838;        
+        }
+
+        tbody > tr:nth-child(2n) {
+            background-color: lightgray;
         }
 
         td.num {
@@ -36,6 +54,7 @@
     <!--
         ANATOMIA PARA TABELAS GRANDES
         TABLE
+            CAPTION
             THEAD
                 TR, TD, TH
             TBODY
@@ -44,10 +63,11 @@
                 TR, TD, TH
     -->
     <table>
+        <caption> Populacao Mocambicana</caption>
         <thead>
             <tr>
-                <th>Provincia</th>
-                <th>Populacao</th>
+                <th scope="col">Provincia</th>
+                <th scope="col" style="width: 50px;">Populacao</th>
             </tr>
         </thead>
         <tbody>
@@ -94,10 +114,19 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num"><strong>30,832,244</strong></td>
             </tr>      
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos beatae commodi aliquid consectetur deserunt hic itaque dolores, ducimus voluptates maxime veritatis possimus, praesentium ad? Eos quasi ex rem molestias libero. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque a, voluptates nemo optio praesentium accusantium quisquam iure dolorum eius numquam possimus, esse eos hic, laboriosam itaque similique animi! Quos, itaque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae provident dolorum in enim culpa libero quas sunt repudiandae nesciunt beatae quidem fugit ratione quod iure itaque officiis, vel mollitia quo. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde deserunt, perferendis, quae magnam iure at sit rerum, aut fugit exercitationem quia ut voluptate aperiam. Consequuntur dolor ipsum atque aperiam tenetur.</p>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos beatae commodi aliquid consectetur deserunt hic itaque dolores, ducimus voluptates maxime veritatis possimus, praesentium ad? Eos quasi ex rem molestias libero. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque a, voluptates nemo optio praesentium accusantium quisquam iure dolorum eius numquam possimus, esse eos hic, laboriosam itaque similique animi! Quos, itaque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae provident dolorum in enim culpa libero quas sunt repudiandae nesciunt beatae quidem fugit ratione quod iure itaque officiis, vel mollitia quo. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde deserunt, perferendis, quae magnam iure at sit rerum, aut fugit exercitationem quia ut voluptate aperiam. Consequuntur dolor ipsum atque aperiam tenetur.</p>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos beatae commodi aliquid consectetur deserunt hic itaque dolores, ducimus voluptates maxime veritatis possimus, praesentium ad? Eos quasi ex rem molestias libero. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque a, voluptates nemo optio praesentium accusantium quisquam iure dolorum eius numquam possimus, esse eos hic, laboriosam itaque similique animi! Quos, itaque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae provident dolorum in enim culpa libero quas sunt repudiandae nesciunt beatae quidem fugit ratione quod iure itaque officiis, vel mollitia quo. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde deserunt, perferendis, quae magnam iure at sit rerum, aut fugit exercitationem quia ut voluptate aperiam. Consequuntur dolor ipsum atque aperiam tenetur.</p>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos beatae commodi aliquid consectetur deserunt hic itaque dolores, ducimus voluptates maxime veritatis possimus, praesentium ad? Eos quasi ex rem molestias libero. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque a, voluptates nemo optio praesentium accusantium quisquam iure dolorum eius numquam possimus, esse eos hic, laboriosam itaque similique animi! Quos, itaque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae provident dolorum in enim culpa libero quas sunt repudiandae nesciunt beatae quidem fugit ratione quod iure itaque officiis, vel mollitia quo. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde deserunt, perferendis, quae magnam iure at sit rerum, aut fugit exercitationem quia ut voluptate aperiam. Consequuntur dolor ipsum atque aperiam tenetur.</p>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos beatae commodi aliquid consectetur deserunt hic itaque dolores, ducimus voluptates maxime veritatis possimus, praesentium ad? Eos quasi ex rem molestias libero. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque a, voluptates nemo optio praesentium accusantium quisquam iure dolorum eius numquam possimus, esse eos hic, laboriosam itaque similique animi! Quos, itaque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae provident dolorum in enim culpa libero quas sunt repudiandae nesciunt beatae quidem fugit ratione quod iure itaque officiis, vel mollitia quo. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde deserunt, perferendis, quae magnam iure at sit rerum, aut fugit exercitationem quia ut voluptate aperiam. Consequuntur dolor ipsum atque aperiam tenetur.</p>
 </body>
 </html>
